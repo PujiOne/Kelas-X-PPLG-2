@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    background-color: #222327;
+    color: #fff;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+    background-color: rgba(0, 0, 0, .20);
+}
+header.sticky {
+    padding: 30px 30px;
+    background-color: black;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo i {
+    color: #b65308;
+    font-size: 28px;
+    margin-right: 3px;
+}
+.logo span {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.navbar {
+    display: flex;
+}
+.navbar a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 30px;
+    transition: all .50s ease;
+}
+.navbar a:hover {
+    color: #b65308;
+}
+.navbar a.active {
+    color: #b65308;
+}
+.main {
+    display: flex;
+    align-items: center;
+}
+.main a {
+    margin-right: 25px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.user {
+    display: flex;
+    align-items: center;
+}
+.user i {
+    color: #b65308;
+    font-size: 28px;
+    margin-right: 7px;
+}
+.main a:hover {
+    color: #b65308;
+}
+#menu-icon {
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+/* Tampilan Awal */
+.tampilan {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem;
+    padding: 150px;
+    border-bottom: 2px solid white;
+}
+.no, .class, .pplg, .dua {
+    font-family: "Hachi Maru Pop", cursive;
+    padding: 10px;
+}
+.no {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: -15px;
+    border-bottom: 1px solid #b65308;
+}
+.class {
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-style: italic;
+}
+.pplg {
+    display: inline;
+    font-size: 40px;
+    letter-spacing: 15px;
+    background-color: #b65308;
+    border-radius: 10px;
+    position: relative;
+    left: 25px;
+    top: 10px;
+}
+.dua {
+    font-size: 28px;
+    text-align: right;
+    position: relative;
+    bottom: 20px;
+    right: 130px;
+}
+.little {
+    text-align: center;
+    font-style: italic;
+    color: #b65308;
+    font-weight: 400;
+}
+.garis-1 {
+    position: relative;
+    bottom: 450px;
+    left: 450px;
+    width: 50%;
+    rotate: 140deg;
+    color: #fff;
+}
+
+
+/* Foto Bersama */
+.pict, .fotbar {
+    margin-top: 150px;
+}
+h2 {
+    text-align: center;
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 600;
+}
+.fotbar {
+    width: 1300px;
+    margin: 50px auto;
+    display: flex;
+}
+.card {
+    border: 1px solid #aaa;
+    border-radius: 13px;
+    background-color: #eee;
+    overflow: hidden;
+    margin: 20px;
+    flex: 1;
+}
+.card .header {
+    height: 250px;
+    background-color: #666;
+}
+.card .content {
+    text-align: center;
+    color: #222327;
+    padding: 15px;
+}
+.card.besar:hover {
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+.card img {
+    width: 392px;
+    height: 250px;
+}
+.smk, .welcome {
+    text-align: center;
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 600;
+}
+.smk {
+    color: #b65308;
+    font-size: 8px;
+}
+.welcome {
+    font-size: 20px;
+} 
+.wrap {
+    border-bottom: 2px solid white;
+    padding: 100px;
+}
+/* overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;  
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 99999999;
+}
+.overlay:target {
+    bottom: 0;
+    right: 0; 
+}
+
+/* Struktur Kelas */
+.struktur {
+    text-align: center;
+    margin-top: 150px;
+}
+.walikelas {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+}
+.pak-riyan img {
+    width: 300px;
+    height: 300px;
+}
+.pak-riyan .layer {
+    display: flex;
+    justify-content: center;
+    background-color: #b6530881;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+}
+.pak-riyan .layer:hover {
+        opacity: 1;
+}
+/* .walikelas {
+    margin: 100px 0;
+    display: flex;
+}
+.pak-riyan {
+    background-color: #666;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, .3);
+    text-align: center;
+} */
+.struktur-kelas {
+    max-width: 1500px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.thumbnail {
+    width: 20%;
+    margin: 30px;
+    position: relative;
+}
+.thumbnail img {
+    width: 100%;
+    border-radius: 5px;
+}
+.layer, .layer-girl {
+    text-transform: uppercase;
+}
+.struktur-kelas .layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(63, 95, 253, 0.5);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97.5%;
+    color: #ddd;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    opacity: 0;
+    transition: .3s;
+}
+.struktur-kelas .layer-girl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 53, 140, 0.5);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97.5%;
+    color: #ddd;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    opacity: 0;
+    transition: .3s;
+}    
+.struktur-kelas .layer:hover {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+.struktur-kelas .layer-girl:hover {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+
+/* RESPONSIVE WEB */
+@media (max-width: 1650px) {
+    .garis-1 {
+        width: 50%;
+        position: relative;
+        left: 300px;
+    }
+}
+@media (max-width: 1450px) {
+    .tampilan {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .tampilan .tulisan {
+        width: 300px;
+        height: 300px;
+        margin-left: 100px;
+    }
+    .tampilan img {
+        width: 300px;
+        height: 300px;
+        margin: 50px;
+    }
+    .tulisan .dua {
+        font-size: 18px;
+        text-align: right;
+        position: relative;
+        right: 70px;
+    }
+    .no {
+        font-size: 15px;
+        margin-bottom: -15px;
+    }
+    .class {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    .pplg {
+        font-size: 10px;
+        letter-spacing: 5px;
+        position: relative;
+        left: 15px;
+        top: 5px;
+    }
+    .dua {
+        font-size: 18px;
+        text-align: right;
+        position: relative;
+        bottom: 10px;
+        right: 150px;
+    }
+    .garis-1 {
+        position: relative;
+        bottom: 100px;
+        left: 100px;
+        width: 50%;
+        rotate: 0deg;
+        color: #fff;
+    }
+    .fotbar {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    }
+    .fotbar img {
+        width: 100%;
+        height: 100%;
+    }
+}

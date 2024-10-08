@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Bilangan bentuk segitiga</title>
+</head>
+<body>
+    <script>
+        let n = 5;
+
+        for (let baris = 1; baris <= n; baris++) {
+            let tampil = "";
+
+            let startAngka = baris;
+
+            for (let angka = 0; angka < baris; angka++) {
+                tampil += (startAngka + angka);
+            }
+
+            document.write(tampil + '<br>');
+        }
+    </script>
+</body>
+</html>

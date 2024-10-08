@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input data</title>
+</head>
+<body>
+    <form name="fform">
+        <h1>INPUT</h1>
+        Nama :
+        <input type="text" name="nama">
+        <br>
+
+        Kelas :
+        <input type="text" name="alamat">
+        <br>
+
+        <input type="button" value="kirim !" onclick="klik()">
+        <input type="reset" value="ulang woi">
+
+        <h1>OUTPUT</h1>
+        Nama Anda :
+        <input type="text" name="onama">
+        <br>
+
+        Kelas Anda :
+        <input type="text" name="oalamat">
+    </form>
+
+        <script>
+            function klik() {
+                var name = (document.fform.nama.value);
+                var alamat = (document.fform.alamat.value);
+
+                document.fform.onama.value = name;
+                document.fform.oalamat.value = alamat;
+            };
+        </script>
+    </form>
+</body>
+</html>

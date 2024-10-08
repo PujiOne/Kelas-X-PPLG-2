@@ -1,0 +1,101 @@
+html body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 2000px;
+    margin: auto;
+    background-color: #cacaca;
+    position: relative;
+}
+
+.header {
+    margin: 20px;
+    padding-top: 50px;
+}
+
+.nav {
+    position: fixed;
+    background-color: #333;
+    width: 2000px;
+    z-index: 999;
+    margin-top: -20px;
+}
+
+.nav li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    background-color: orange;
+}
+
+img {
+    width: 500px;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.header h2 {
+    position: absolute;
+    font-size: 80px;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    right: 500px;
+    top: 150px;
+}
+
+.foto {
+    background-image: url(kelas.jpg);
+    background-size: cover;
+    height: 700px;
+    background-position: center center;
+    border-top: 7px solid black;
+    border-bottom: 7px solid black;
+}
+
+#struktur {
+    padding: 30px;
+}
+
+#struktur h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.wakel {
+    background-color: orange;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 830px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.murid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 20px;
+}
+
+.murid div {
+    background-color: orange;
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}

@@ -1,0 +1,151 @@
+.logo-pplg img {
+    width: 300px;
+}
+
+header,
+.fotbar {
+    min-height: 600px;
+}
+
+hr {
+    border-top: 3px solid #777;
+}
+
+
+
+
+.img-thumbnail {
+    display: block;
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255,255,255,0.5);
+    transform: scale(0);
+}
+.caption {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.thumbnail {
+    position: relative;
+}
+.thumbnail:hover {
+    transform: translateY(0);
+}
+.img-container:hover .overlay {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+
+
+#gallery-modal .modal-img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+    .gallery {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+/* Jadwal-Pelajaran start*/
+/* .jadwal-pelajaran {
+    margin-top: 150px;
+}
+.judul-atas {
+    margin-bottom: -50px;
+}
+.judul-atas p {
+    font-size: 20px;
+}
+.jadwal-pelajaran .table-mapel {
+    margin: 100px;
+}
+.jadwal-pelajaran .table-mapel th, td {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.jadwal-pelajaran .table-mapel table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(255, 0, 0, 0.616);
+}
+.jadwal-pelajaran .table-mapel th {
+    background-color: #b65308;
+    color: white;
+}
+
+.jadwal-pelajaran .table-mapel td {
+    color: #333;
+}
+
+.jadwal-pelajaran tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+} */
+/* jadwal pelajaran end */
+
+
+
+
+
+
+
+
+
+
+
+/* .layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(63, 95, 253, 0.5);
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    color: #ddd;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    opacity: 0;
+    transition: .3s;
+}
+.layer:hover {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+} */
